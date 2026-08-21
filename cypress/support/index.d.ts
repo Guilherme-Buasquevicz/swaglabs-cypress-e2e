@@ -1,11 +1,13 @@
 declare namespace Cypress {
   interface Chainable {
 
-    clicarBotaoInput(idBotao: string, nomeBotao: string): Chainable<void>;
+    clicar(seletor: string, valorEsperado?: string): Chainable<void>;
 
     preencherCampo(idBotao: string, textoCampo: string): Chainable<void>;
 
+    validaTexto(texto: string): Chainable<void>
 
+    validarRota(caminho?: string): Chainable<void>
     }
 }
 

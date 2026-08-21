@@ -6,7 +6,7 @@
 
 O projeto consiste na criação de testes automatizados da [SauceDemo (SwagLabs)](https://www.saucedemo.com/), construída com **Cypress + TypeScript**, seguindo o padrão **Page Object Model (POM)**.
 
-Esse projeto tem o intuito de demonstrar a construção da automação de testes com o foco em boas práticas de arquitetura de testes, organização do código e seguraça do processo.
+Esse projeto tem o intuito de demonstrar a construção da automação de testes com o foco em boas práticas de arquitetura de testes, organização do código e segurança do processo.
 
 ---
 
