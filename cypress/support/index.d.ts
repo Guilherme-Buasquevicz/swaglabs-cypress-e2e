@@ -8,6 +8,10 @@ declare namespace Cypress {
     validaTexto(texto: string): Chainable<void>
 
     validarRota(caminho?: string): Chainable<void>
+
+    selecionarOpcao(seletor: string, opcao: string): Chainable<void>
+
+    validarQuantidadeCarrinho (quantidade?: number): Chainable<void>
     }
 }
 

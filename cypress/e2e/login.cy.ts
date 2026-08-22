@@ -1,8 +1,10 @@
-import { Login } from '../../page/login/login';
+import { Login } from '../page/login';
+import { Menu } from '../page/components/menu';
 
 describe('Realizando os testes de login', () => {
   
     const login = new Login();
+    const menu = new Menu();
 
   beforeEach(() => {
     cy.visit('/');
@@ -30,8 +32,8 @@ describe('Realizando os testes de login', () => {
     
     cy.validarRota('/inventory.html');
 
-    login.clicarBotaoMenu()
-    login.clicarBotaoLogof('Logout')
+    menu.abrirMenu()
+    menu.clicarBotaoLogof('Logout')
     login.textoEsperado('Password for all users')
     
     cy.validarRota();
