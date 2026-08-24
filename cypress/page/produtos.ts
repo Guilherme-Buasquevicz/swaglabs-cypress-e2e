@@ -24,6 +24,12 @@ export class Produtos {
         cy.clicar(`#add-to-cart-${slugProduto}`, texto);
     }
 
+    public adicionarProdutosAoCarrinho(produtos: { slug: string; textoBotao: string }[]) {
+        produtos.forEach((produto) => {
+            this.adicionarProdutoAoCarrinho(produto.slug, produto.textoBotao);
+        });
+    }
+
     public removerProdutoDoCarrinho(slugProduto: string, texto: string) {
         cy.clicar(`#remove-${slugProduto}`, texto);
     }
