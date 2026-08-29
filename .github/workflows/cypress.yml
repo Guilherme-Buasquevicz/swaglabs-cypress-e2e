@@ -15,6 +15,15 @@ jobs:
 
       - name: Rodar testes Cypress
         uses: cypress-io/github-action@v6
+        with:
+          command: npm run test
         env:
           CYPRESS_SWAG_USERNAME: ${{ secrets.CYPRESS_SWAG_USERNAME }}
           CYPRESS_SWAG_PASSWORD: ${{ secrets.CYPRESS_SWAG_PASSWORD }}
+
+      - name: Publicar relatório Mochawesome
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: mochawesome-report
+          path: cypress/reports
