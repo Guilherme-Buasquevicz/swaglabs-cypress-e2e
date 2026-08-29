@@ -1,4 +1,5 @@
 # 🧪 SwagLabs Cypress E2E Automation
+[![Cypress Tests](https://github.com/Guilherme-Buasquevicz/swaglabs-cypress-e2e/actions/workflows/cypress.yml/badge.svg)](https://github.com/Guilherme-Buasquevicz/swaglabs-cypress-e2e/actions/workflows/cypress.yml)
 
 [![Cypress](https://img.shields.io/badge/Cypress-15.x-17202C?logo=cypress&logoColor=white)](https://www.cypress.io/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
